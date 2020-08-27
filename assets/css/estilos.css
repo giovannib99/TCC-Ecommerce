@@ -1,0 +1,167 @@
+:root {
+	--text-white: #f1f1f1;
+	--color-primary: #344055;
+	--color-primary-light: #465672;
+	--color-primary-dark: #27303f;
+	--color-button: #489FB5;
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+}
+
+/* 
+Geral 
+*/
+
+body {
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+	color: #a3a3a3;
+	
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
+	font-weight: 700;
+}
+
+.botao {
+	color: var(--text-white);
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: var(--color-button);
+	font-size: 15px;
+	border-radius: 2px;
+}
+
+/* 
+Navegação
+*/
+
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #344055;
+}
+
+nav > a {
+	text-decoration: none;
+	color: var(--text-white);
+	font-weight: 700;
+	font-size: 28px;
+	font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+nav ul li {
+	text-align: center;
+	width: 100%;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: var(--text-white);
+}
+
+/*
+Cabeçalho
+*/
+
+header {
+	background-color: var(--color-primary-light);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: var(--text-white);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+
+header p {
+	margin-bottom: 5px;
+}
+
+/*
+Layout Responsivo
+*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+	nav > a {
+		font-size: 25px;
+	}
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	/*
+	Navegação
+	*/
+
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	nav > a {
+		font-size: 19px;
+	}
+
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+		font-size: 14px;
+	}
+
+	/*
+	cabeçalho
+	*/
+
+	header {
+		height: 30vh;
+		justify-content: space-around;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	nav > a {
+		font-size: 25px;
+	}
+
+	nav ul {
+		font-size: 20px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
