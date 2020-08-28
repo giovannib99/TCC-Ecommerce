@@ -12,9 +12,7 @@
 	box-sizing: border-box;
 }
 
-/* 
-Geral 
-*/
+/* Geral */
 
 body {
 	font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -37,9 +35,7 @@ h1, h2, h3 {
 	border-radius: 2px;
 }
 
-/* 
-Navegação
-*/
+/* Navegação */
 
 nav {
 	display: flex;
@@ -78,9 +74,11 @@ nav ul li a {
 	color: var(--text-white);
 }
 
-/*
-Cabeçalho
-*/
+nav ul li a:hover {
+	background-color: var(--color-button);
+}
+
+/* Cabeçalho */
 
 header {
 	background-color: var(--color-primary-light);
@@ -99,30 +97,17 @@ header p {
 	margin-bottom: 5px;
 }
 
-/*
-Layout Responsivo
-*/
+/* Layout Responsivo */
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 320px) {
 	nav > a {
 		font-size: 25px;
 	}
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-	/*
-	Navegação
-	*/
+
+	/* Navegação */
 
 	nav {
 		flex-direction: row;
@@ -130,7 +115,7 @@ Layout Responsivo
 	}
 
 	nav > a {
-		font-size: 19px;
+		font-size: 19px;	
 	}
 
 	nav ul {
@@ -139,9 +124,7 @@ Layout Responsivo
 		font-size: 14px;
 	}
 
-	/*
-	cabeçalho
-	*/
+	/* cabeçalho */
 
 	header {
 		height: 30vh;
@@ -149,7 +132,6 @@ Layout Responsivo
 	}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
 	nav > a {
@@ -159,9 +141,4 @@ Layout Responsivo
 	nav ul {
 		font-size: 20px;
 	}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
 }
